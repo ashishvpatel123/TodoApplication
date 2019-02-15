@@ -12,6 +12,8 @@
 		491609B222160F0600ACF009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491609B022160F0600ACF009 /* Main.storyboard */; };
 		491609B422160F0900ACF009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491609B322160F0900ACF009 /* Assets.xcassets */; };
 		491609B722160F0900ACF009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491609B522160F0900ACF009 /* LaunchScreen.storyboard */; };
+		491609BF2216162800ACF009 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491609BE2216162800ACF009 /* AddTaskViewController.swift */; };
+		491609E12216A91C00ACF009 /* CompletedTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491609E02216A91C00ACF009 /* CompletedTaskVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		491609B322160F0900ACF009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491609B622160F0900ACF009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		491609B822160F0900ACF009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		491609BE2216162800ACF009 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		491609E02216A91C00ACF009 /* CompletedTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTaskVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				491609AC22160F0600ACF009 /* AppDelegate.swift */,
+				491609E02216A91C00ACF009 /* CompletedTaskVC.swift */,
 				491609AE22160F0600ACF009 /* ViewController.swift */,
 				491609B022160F0600ACF009 /* Main.storyboard */,
+				491609BE2216162800ACF009 /* AddTaskViewController.swift */,
 				491609B322160F0900ACF009 /* Assets.xcassets */,
 				491609B522160F0900ACF009 /* LaunchScreen.storyboard */,
 				491609B822160F0900ACF009 /* Info.plist */,
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				491609AF22160F0600ACF009 /* ViewController.swift in Sources */,
+				491609E12216A91C00ACF009 /* CompletedTaskVC.swift in Sources */,
+				491609BF2216162800ACF009 /* AddTaskViewController.swift in Sources */,
 				491609AD22160F0600ACF009 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAAH8G3K8Y;
 				INFOPLIST_FILE = TodoApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAAH8G3K8Y;
 				INFOPLIST_FILE = TodoApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
