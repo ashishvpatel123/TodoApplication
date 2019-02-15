@@ -14,8 +14,8 @@ class AddTaskViewController: UIViewController {
     var previousSavedToDoList: [String] = []
 
 
-    @IBOutlet weak var taskDecEF: UITextField!
-    @IBOutlet weak var taskTitleEF: UITextField!
+    @IBOutlet weak var taskDiscriptionFiled: UITextField!
+    @IBOutlet weak var taskTitleField: UITextField!
     @IBOutlet weak var saveTaskButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +34,8 @@ class AddTaskViewController: UIViewController {
     @IBAction func saveButtonClicked(_ sender: Any) {
         print("save button clicked")
         
-        let taskTitle = taskTitleEF.text
-        let taskDec = taskDecEF.text
+        let taskTitle = taskTitleField.text
+        let taskDec = taskDiscriptionFiled.text
         
         
         //check weather filed is empty or not
@@ -44,8 +44,8 @@ class AddTaskViewController: UIViewController {
            // let taskDetail = TaskModel(taskTitle: taskTitle! ,taskDescription: taskDec! )
             
             // setting it agin empty
-            taskTitleEF.text = ""
-            taskDecEF.text = ""
+            taskTitleField.text = ""
+            taskDiscriptionFiled.text = ""
             
             
             
