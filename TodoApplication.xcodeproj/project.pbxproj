@@ -15,6 +15,7 @@
 		491609BF2216162800ACF009 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491609BE2216162800ACF009 /* AddTaskViewController.swift */; };
 		491609E12216A91C00ACF009 /* CompletedTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491609E02216A91C00ACF009 /* CompletedTaskVC.swift */; };
 		49BD618B221D1D340011AAB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49BD618A221D1D330011AAB7 /* GoogleService-Info.plist */; };
+		49BD618D221D1DBB0011AAB7 /* ToDoDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD618C221D1DBB0011AAB7 /* ToDoDatabase.swift */; };
 		E56F615D6C233EC6636E41F2 /* Pods_TodoApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513D16AB9F1DD24CAB0D20E3 /* Pods_TodoApplication.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		491609BE2216162800ACF009 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		491609E02216A91C00ACF009 /* CompletedTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTaskVC.swift; sourceTree = "<group>"; };
 		49BD618A221D1D330011AAB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49BD618C221D1DBB0011AAB7 /* ToDoDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDatabase.swift; sourceTree = "<group>"; };
 		513D16AB9F1DD24CAB0D20E3 /* Pods_TodoApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F95574C39049931C648FF4 /* Pods-TodoApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoApplication.debug.xcconfig"; path = "Target Support Files/Pods-TodoApplication/Pods-TodoApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		D8F506E8134423143BFCA3B7 /* Pods-TodoApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoApplication.release.xcconfig"; path = "Target Support Files/Pods-TodoApplication/Pods-TodoApplication.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				491609B522160F0900ACF009 /* LaunchScreen.storyboard */,
 				491609B822160F0900ACF009 /* Info.plist */,
 				49BD618A221D1D330011AAB7 /* GoogleService-Info.plist */,
+				49BD618C221D1DBB0011AAB7 /* ToDoDatabase.swift */,
 			);
 			path = TodoApplication;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			files = (
 				491609AF22160F0600ACF009 /* ViewController.swift in Sources */,
 				491609E12216A91C00ACF009 /* CompletedTaskVC.swift in Sources */,
+				49BD618D221D1DBB0011AAB7 /* ToDoDatabase.swift in Sources */,
 				491609BF2216162800ACF009 /* AddTaskViewController.swift in Sources */,
 				491609AD22160F0600ACF009 /* AppDelegate.swift in Sources */,
 			);

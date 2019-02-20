@@ -43,6 +43,8 @@ class AddTaskViewController: UIViewController {
             var previousSavedToDoList = defaults.stringArray(forKey: "usertaskList") ?? [String]()
             previousSavedToDoList.insert(taskDec! , at: 0)
             defaults.set(previousSavedToDoList, forKey: "usertaskList")
+            let taskData = ToDoDatabase.init(title: taskTitle!, discription: taskDec!)
+            taskData.saveDatabase()
         
         }
         
