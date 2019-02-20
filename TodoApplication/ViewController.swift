@@ -29,17 +29,10 @@ class ViewController: UIViewController , UITableViewDataSource,UITableViewDelega
         })
         closeAction.image = UIImage(named: "tick")
         closeAction.backgroundColor = .blue
-        
-        
-        
         return UISwipeActionsConfiguration(actions: [closeAction])
         
     }
-    
-    
-
-    
-    
+ 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
@@ -65,7 +58,6 @@ class ViewController: UIViewController , UITableViewDataSource,UITableViewDelega
         }
     }
 
-    
     // adding to new userdefaults as ccompted task
     func addToCompletedTaskList(index : Int)  {
         var completedToDoList = defaults.stringArray(forKey: "CompletedTasks") ?? [String]()
@@ -81,16 +73,8 @@ class ViewController: UIViewController , UITableViewDataSource,UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
         
         toDoTableView.dataSource = self
-        
         updateToDoData()
-        
         print("data")
-        
-        
-        //check if we have the data for task
-        
-        //var [todoList] : [String] =  UserDefaults.standard.value(forKey: "usertaskList")
-
         
     }
     // updating the view when ever it comes back
