@@ -9,6 +9,8 @@
 import Foundation
 import Firebase
 
+var toDoTaskData : [[String : String]] = []
+
 class ToDoDatabase{
     
     
@@ -20,7 +22,8 @@ class ToDoDatabase{
     init(title:String , discription:String) {
         self.title = title
         self.discription = discription
-       
+
+        ref = Database.database().reference().child("User/ToDoTask")
     }
     
     
@@ -30,11 +33,27 @@ class ToDoDatabase{
             "discription" : discription
         ]
     }
-    
+        
     func saveDatabase(){
-        FirebaseApp.configure()
-        ref = Database.database().reference().child("User/ToDoTask").childByAutoId()
-        ref.setValue(toDisctionary())
+        ref.childByAutoId().setValue(toDisctionary())
+        toDoTaskData.insert(toDisctionary(), at: 0)
+        print("todotask Database : \(toDoTaskData)")
+        
+    }
+    
+    static func readDatabase(){
+        var ref : DatabaseReference!
+        ref =  Database.database().reference().child("User/ToDoTask")
+        ref.observeSingleEvent(of: .value) { (snapshot) in
+            for child in snapshot.children {
+                let snap  = child as! DataSnapshot
+                let key = snap.key
+                let value = snap.value as! [String:String]
+                toDoTaskData.insert(value, at: 0)
+                print("key : \(key) value \(value)")
+                
+            }
+        }
     }
     
     
